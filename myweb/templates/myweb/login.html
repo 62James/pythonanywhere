@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>login</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
@@ -10,16 +11,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+.gwd-div-10yr {
+      position: absolute;
+      background-image: none;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+      transform-origin: 50% 50% 0px;
+      width: 490.03px;
+      height: 286.98px;
+      top: 21.4%;
+      left: 33.32%;
+      background-color: rgba(253, 186, 0, 0.9);
+    }
 </style>
 <body>
-<form action="login_active" method="post" >
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
     <a href="#home" class="w3-bar-item w3-button">kanomthai</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-	  <a href="register" class="w3-bar-item w3-button">Register</a>
+	  <a href="/register" class="w3-bar-item w3-button">Register</a>
 
     </div>
   </div>
@@ -32,19 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 </header>
 
 <body class="htmlNoPages">
- <!--<div class="gwd-div-10yr" id="ds">-->
-     <form method="post">
+    <div class="gwd-div-10yr" id="ds">
+<h>Login</h>
+    <form method="post">
     {% csrf_token %}
     {{form.as_p}}
-    {% if form.errors %}<p> Try again </p>{% endif %}
     <input type="submit" value="Login">
-</form>
-
-  </div>
+    </div>
 </body>
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+
 </html>

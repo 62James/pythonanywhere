@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>ขนมไทย</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">kanomthai</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="home" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+	  <a href="/logout" class="w3-bar-item w3-button">Logout</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" >
+
+  <!-- CSS here -->
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+
+
+  <hr>
+<br>
+<div class="recepie_details_area" id = "home">
+<h1 class="w3-center">Recipes Details</h1><br><br>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="recepies_thumb">
+                        <img src="https://sv1.picz.in.th/images/2020/10/08/OLRcab.md.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div  class="recepies_info">
+                        <h3>Thong Yep</h3>
+                        <p>  ทองหยิบ ขนมไทยๆที่นอกจากจะอร่อยแล้ว ยังมีความประณีตค่อนข้างมากในแต่ละขั้นตอน กว่าจะได้ขนมในแต่ละอย่าง นอกเหนือจากหน้าตาแล้ว รสชาติก็ต้องดีอีกด้วย และทองหยิบก็ยังเป็นขนมที่นิยมใช้ประกอบในพิธีมงคลต่างๆอีกด้วย
+						</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 ">
+                    <div class="recepies_info">
+					<span id="lblReviewTipComment"><h4><u>วัตถุดิบทองหยิบ</u></h4>เวลาในการทำ 30 นาที<br>
+	ส่วนผสมสำหรับ 3-4 ที่<br>
+<br>
+1.	ไข่แดงของไข่ไก่ 3 ฟอง<br>
+2.	ไข่แดงของไข่เป็ด 3 ฟอง<br>
+3.	แป้งข้าวจ้าว 1/2 ชต.<br>
+4.	แป้งมัน 1 ชช.<br>
+5.	แป้งท้าวยายม่อม 1 ชช.<br>
+6.	น้ำเปล่า 400 มล.<br>
+7.	กลิ่นมะลิ 1/2 ชช.<br>
+8.	น้ำตาลทราย 600 ก.<br>
+9.	ใบเตย 1 ใบ<br>
+10.	เทียนอบ 1 ชิ้น<br>
+11.	น้ำเชื่อม 1 ถ้วยใหญ่ (700 มล.)<br><br><h4><u>อุปกรณ์ที่ใช้</u></h4>กระทะทองเหลือง ชามผสม กระชอน เทียนหอม<br><br><h4><u>วิธีทำทองหยิบ</u></h4>1.	นำน้ำเปล่า น้ำตาลทราย ใบเตย กลิ่นมะลิ ลงต้มรวมกันในกระทะทองเหลือง ใช้ไฟแรงและห้ามคนโดยเด็ดขาด<br>
+2.	นำแป้งทั้ง 3 ชนิดผสมรวมกัน นำไปร่อนให้ละเอียดด้วยกระชอนตาถี่ พักไว้<br>
+3.	นำไข่แดงทั้งหมดตีให้ขึ้นฟู (ตีประมาณ 5 นาที) จากนั้นเติมแป้งลงในไข่ไก่ ผสมให้เข้ากัน<br>
+4.	ตักใบเตยออก ปิดแก๊สให้น้ำเชื่อมนึ่ง ใช้ช้อนตักส่วนผสมหยอดลงในกระทะ ระวังอย่าให้ติดกัน จากนั้นเปิดไฟกลางให้ขนมสุกทั้งสองด้าน<br>
+5.	ตักขึ้นพักไว้ให้เย็นในถ้วยน้ำเชื่อม ช้อนขนมขึ้นมาแล้วจับจีบวางใส่ถ้วย จุดเทียนให้มีควันแล้วจึงดับไฟอบพร้อมกับทองหยิบ ปิดฝาอบรวมกันนาน 10 นาที เป็นอันเสร็จ พร้อมเสิร์ฟ<br><br><br><br></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1>
+    <p>เรามีบริการจัดสั่งทำขนมแบบครบวงจรสำหรับทุกงานไม่ว่าจะเล็กหรือใหญ่ขนมไทยโบราณหรือขนมไทยประยุกต์ เราเข้าใจความต้องการของคุณและเราจะจัดเตรียมอาหารให้ตรงตามเกณฑ์ที่ใหญ่ที่สุดโปรดไว้วางใจในรูปลักษณ์และรสชาติของเรา อย่าลังเลที่จะติดต่อเรา</p>
+    <p>คุณสามารถติดต่อเราทางโทรศัพท์  0993302023 หรืออีเมล surasak.na.62@ubu.ac.th หรือคุณสามารถส่งข้อความถึงเราได้ที่นี่:</p>
+   <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>

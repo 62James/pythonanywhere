@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>ขนมไทย</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">kanomthai</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+	  <a href="logout" class="w3-bar-item w3-button">Logout</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://img.wongnai.com/p/1920x0/2019/10/23/c255f3d9d1cb48919f3727567629a824.jpg" alt="Hamburger Catering" width="1600" height="800">
+ <!-- <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">kanomthai</h1>
+  </div>
+  <!-- CSS here -->
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://aumento.officemate.co.th/media/catalog/product/h/t/httpss3-ap-southeast-1.amazonaws.compim-prod-product-imagesc492c492a4d09ea1c1b4b4108e024d631aa86cfc00a6_mkp0310713dummy.jpg?imwidth=640" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About </h1><br>
+     <!-- <h5 class="w3-center">Tradition since 1889</h5> -->
+      <p class="w3-large">ถ้าจะกล่าวถึงขนมไทยนั้น ถือได้ว่าเป็นขนมโบราณที่มีประวัติมายาวนาน ตั้งแต่สมัย
+สมเด็จพระนารายณ์มหาราช โดย ขนมไทย เป็นของกินเล่นยามว่าง เป็นอาหารเบา ๆ มีหลากหลาย
+ชนิด หลายรสชาติ และหลายรูปแบบ และยังมีพัฒนาการอยู่ตลอดเวลา จนแตกแขนงออกไปอีก
+มากมาย ซึ่งเหล่านี้ มีอิทธิพลต่อการตัดสินใจเลือกซื้อขนมไทยของคนไทยเป็นอย่างมาก จะเห็นได้
+จาก การวางขายขนมจะมีอยู่ทั่วไป อีกทั้งยังใช้ในงานพิธีมงคลต่าง ๆ มาตั้งแต่โบราณ ในเทศกาล
+สาคัญ หรือต้อนรับแขกสาคัญ เพราะขนมบางชนิดต้องอาศัยกาลังคนในการทาพอสมควร เช่น
+ขนมครก ขนมถ้วย ฯลฯ (เส้นทางขนมไทย, 2553).</p><br>
+      <p class="w3-large ">การทำขนมไทยจะเป็นอีกทางที่ทำให้ทุกท่านได้รับความเป็นไทยดั่งเดิมด้วยสูตรขนมไทยที่พวกเราได้มีไว้ให้ท่านชม หรือท่านสามรถซื้อสูตรขนมไทยอื่นเพิ่มเติมหรือสารมารถสั่งทำเป็นออเดอร์ได้ตามที่อยู่ติดต่อด้านล่างครับ</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- recepie_area_start  -->
+    <div class="recepie_area plus_padding " id="menu">
+	<h1 class="w3-center">Our Menu</h1><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLRcab.md.jpg" alt="">
+                        </div>
+                        <h3>Thong Yep</h3>
+                        <a href="/recipes_details1" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLRi4f.md.jpg" alt="">
+                        </div>
+                        <h3>Thong Yod</h3>
+                        <a href="/recipes_details2" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLRCZk.jpg" alt="">
+                        </div>
+                        <h3>Foy Thong</h3>
+                        <a href="/recipes_details3" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLR8bV.md.jpg" alt="">
+                        </div>
+                        <h3>Ka Nom Tom</h3>
+                        <a href="/recipes_details4" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLRr9N.jpg" alt="">
+                        </div>
+                        <h3>Ka Nom Tian</h3>
+                        <a href="/recipes_details5" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img src="https://sv1.picz.in.th/images/2020/10/08/OLRHpQ.jpg" alt="">
+                        </div>
+                        <h3>Ka Nom Thuai</h3>
+                        <a href="/recipes_details6" class="line_btn">View Full Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /recepie_area_start  -->
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1>
+    <p>เรามีบริการจัดสั่งทำขนมแบบครบวงจรสำหรับทุกงานไม่ว่าจะเล็กหรือใหญ่ขนมไทยโบราณหรือขนมไทยประยุกต์ เราเข้าใจความต้องการของคุณและเราจะจัดเตรียมอาหารให้ตรงตามเกณฑ์ที่ใหญ่ที่สุดโปรดไว้วางใจในรูปลักษณ์และรสชาติของเรา อย่าลังเลที่จะติดต่อเรา</p>
+    <p>คุณสามารถติดต่อเราทางโทรศัพท์  0993302023 หรืออีเมล surasak.na.62@ubu.ac.th</p>
+   <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

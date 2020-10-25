@@ -14,3 +14,8 @@ class Choice(models.Model):
 
     def __str__(self):
         return f'{self.question.question_text} - {self.choice_text} - {self.votes}'
+
+
+
+
+

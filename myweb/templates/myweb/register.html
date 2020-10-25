@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>ขนมไทย</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+    .gwd-div-1hpx {
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+      background-image: none;
+      background-color: rgba(253, 186, 0, 0.9);
+      transform-origin: 50% 50% 0px;
+      width: 490.03px;
+      height: 286.98px;
+      top: 21.4%;
+      left: 33.32%;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">kanomthai</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+	  <a href="index.html" class="w3-bar-item w3-button">Login</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="http://beautyinfoo.com/wp-content/uploads/2020/01/60-2.jpg" alt="Hamburger Catering" width="1600" height="800">
+
+</header>
+
+<body class="htmlNoPages">
+  <div class="gwd-div-1hpx">
+    <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <h1 class="font-weight-light">Signup</h1>
+        <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Sign up">
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
